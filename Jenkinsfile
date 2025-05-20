@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Clone Code') {
             steps {
-                git 'https://github.com/MichaeLS0/flask-cicd-app.git', branch: 'main'
+                git url: 'https://github.com/MichaeLS0/flask-cicd-app.git', branch: 'main'
             }
         }
 
